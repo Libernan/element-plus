@@ -64,10 +64,12 @@ const iconClass = computed(() => [
   ns.e('icon'),
   { [ns.is('big')]: !!props.description || !!slots.default },
 ])
-
+//state
 const withDescription = computed(() => {
   return { 'with-description': props.description || slots.default }
 })
+
+//make some changes
 
 const close = (evt: MouseEvent) => {
   visible.value = false
